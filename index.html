@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Budget-Tracker</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="json/manifest.json" />
     <script>
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("./sw.js").then(function () {
+        navigator.serviceWorker.register("script/sw.js").then(function () {
           console.log("Service Worker registriert.");
         });
       }
@@ -24,7 +24,7 @@
       <nav class="navbar navbar-expand-md bg-body py-3">
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="">
-            <img src="Untitled design.png" alt="Logo" />
+            <img src="images/Untitled design.png" alt="Logo" />
           </a>
           <button id="logout-btn" class="btn btn-outline-danger">
             Abmelden
@@ -116,6 +116,13 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("script/sw.js").then(function () {
+            console.log("Service Worker registriert.");
+          });
+        }
+      </script>
+      <script src="script/script.js"></script>     
   </body>
 </html>

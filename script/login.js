@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Login erfolgreich
             localStorage.setItem('currentUser', JSON.stringify(user));
             alert('Login erfolgreich!');
-            window.location.href = 'index.html';
+            window.location.href = '../index.html';
         } else {
             // Login fehlgeschlagen
             alert('Ungültiger Benutzername oder Passwort.');
