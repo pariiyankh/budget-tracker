@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --background-color: #ecf0f1;
+    --text-color: #34495e;
+    --card-background: #ffffff;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header .container{
+    padding: 0px;
+    background-color: #3FCF77;
+}
+
+header img{
+    width: 150px;
+    padding-left: 0px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: var(--card-background);
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+input[type="text"], input[type="number"], input[type="date"], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    background-color: #2ecc71;
+}
+button:hover {
+    background: #B4F0BB;
+    color: #2ecc71;
+}
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 20px;
+    background: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.summary div {
+    text-align: center;
+}
+.summary h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.transactions {
+    margin-top: 30px;
+}
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--card-background);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.transaction-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.income {
+    color: var(--secondary-color);
+}
+.expense {
+    color: var(--accent-color);
+}
+#datetime {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.transaction-details {
+    display: flex;
+    flex-direction: column;
+}
+.transaction-date {
+    font-size: 0.8em;
+    color: #777;
+}
+.icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+.delete-btn {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+.delete-btn:hover {
+    color: #c0392b;
+}
+
+i{
+    color: #58437E;
+    
+}
